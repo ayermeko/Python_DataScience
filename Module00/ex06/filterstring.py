@@ -10,8 +10,17 @@ def isNum(string: str) -> bool:
         return True
     except ValueError:
         return False
-    
-# TODO = Check if Strings do not contain any special characters. (Punctuation or invisible)
+
+
+def check_for_special_characters(string: str) -> bool:
+    """
+    This function checks if the string contains special characters.
+    """
+    for char in string:
+        if not char.isalnum() and not char.isspace():
+            return True
+    return False
+
 
 def main():
     try:
@@ -19,6 +28,8 @@ def main():
         assert argument_count <= 3, "more than two argument is provided"
         if argument_count < 2 or isNum(sys.argv[1]):
             raise AssertionError("the arguments are bad")
+        if check_for_special_characters(sys.argv[1]):
+            raise AssertionError("the argument contains special characters")
         splited_words = sys.argv[1].split(" ")
         n = int(sys.argv[2])
         filtered = [word for word in splited_words
