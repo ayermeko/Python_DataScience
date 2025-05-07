@@ -10,7 +10,8 @@ def isNum(string: str) -> bool:
         return True
     except ValueError:
         return False
-
+    
+# TODO = Check if Strings do not contain any special characters. (Punctuation or invisible)
 
 def main():
     try:
