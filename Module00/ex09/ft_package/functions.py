@@ -1,3 +1,5 @@
+
+
 def count_in_list(lst, n) -> int:
     """
     Count the number of occurrences of n in lst.
@@ -16,4 +18,4 @@ def check_for_special_characters(string: str) -> bool:
     for char in string:
         if not char.isalnum() and not char.isspace():
             return True
-    return False                                                            
+    return False

@@ -1,4 +1,5 @@
 
+
 def ft_tqdm(lst: range) -> None:
     total = len(lst)
     for i, item in enumerate(lst, start=1):
@@ -8,4 +9,3 @@ def ft_tqdm(lst: range) -> None:
         bar = '=' * (filled - 1) + '>' + ' ' * (bar_length - filled)
         print(f'\r{percent:3}%|[{bar}]| {i}/{total}', end='', flush=True)
         yield item
-    
