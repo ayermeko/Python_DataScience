@@ -1,2 +1,1 @@
-from .count_in_list import count_in_list
-from .check_for_special import check_for_special_characters
+from .functions import count_in_list, check_for_special_characters
