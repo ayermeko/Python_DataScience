@@ -1,5 +1,4 @@
 
-
 def check_for_special_characters(string: str) -> bool:
     """
     This function checks if the string contains special characters.
