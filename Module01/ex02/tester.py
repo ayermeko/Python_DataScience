@@ -1,5 +1,4 @@
 from load_image import ft_load
-import os
 
 
 def main():

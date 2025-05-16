@@ -14,8 +14,7 @@ def ft_load(path: str) -> np.array:
         assert os.access(path, os.R_OK), f"File is not readable: {path}"
 
         ext = os.path.splitext(path)[1].lower()
-        assert ext in ['.jpg', '.jpeg'], \
-            f"Unsupported file format '{ext}'."
+        assert ext in ['.jpg', '.jpeg'], f"Unsupported file format '{ext}'."
 
         img = Image.open(path)
         rgb_img = img.convert("RGB")
