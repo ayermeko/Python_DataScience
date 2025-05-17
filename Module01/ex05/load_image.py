@@ -3,21 +3,6 @@ import os
 import numpy as np
 
 
-def zoom(image: np.array) -> np.array:
-    """
-    Zoom on image by given an numpy array
-    """
-    try:
-        assert isinstance(image, np.ndarray), "Input must be a numpy array"
-        assert image.ndim == 3, \
-            "Input array must have 3 dimensions (height, width, channels)"
-        arrZoomedImage = image[100:500, 450:850, 0:1]
-    except AssertionError as e:
-        print(f"{type(e).__name__}: {e}")
-        return None
-    return arrZoomedImage
-
-
 def ft_load(path: str) -> np.array:
     """
     Load an image from a file and return it as a numpy array.
