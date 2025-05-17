@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def ft_display(array: np.array) -> None:
     """
     Display the image using matplotlib.
@@ -11,6 +12,7 @@ def ft_display(array: np.array) -> None:
         plt.show()
     except Exception as e:
         print(f"Error: {type(e).__name__}: {e}")
+
 
 def ft_invert(array: np.array) -> np.array:
     """
@@ -23,6 +25,7 @@ def ft_invert(array: np.array) -> np.array:
     except Exception as e:
         print(f"Error: {type(e).__name__}: {e}")
         return None
+
 
 def ft_red(array: np.array) -> np.array:
     """
@@ -71,10 +74,9 @@ def ft_grey(array: np.array) -> np.array:
     Convert the image to grayscale.
     """
     try:
-        
         red_mean = array[:, :, 0] / 3
         green_mean = array[:, :, 1] / 3
-        blue_mean = array[:, :, 2] / 3 
+        blue_mean = array[:, :, 2] / 3
         sum_mean = red_mean + green_mean + blue_mean
 
         plt.imshow(sum_mean, cmap='gray')
