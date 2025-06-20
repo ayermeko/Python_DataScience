@@ -17,6 +17,9 @@ def main():
             assert isinstance(member, list), f"Entry {i} is not a list"
             assert len(member) == check_len, f"Entry {i} must have at least 1 element"
 
+        print(slice_me(family, 0, 2))
+        print(slice_me(family, 1, -2))
+
     except Exception as e:
         print(f"{type(e).__name__}: {e}")
 
