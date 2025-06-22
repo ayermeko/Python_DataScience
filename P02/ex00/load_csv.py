@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load(path: str) -> pd.Dataset: # -> Dataset: (You have to adapt the type of return according to your library)
+def load(path: str) -> pd.DataFrame: # -> Dataset: (You have to adapt the type of return according to your library)
     try:
         if not isinstance(path, str):
             raise TypeError(f"Incorrect type for a '{path}'")
