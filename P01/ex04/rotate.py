@@ -49,6 +49,8 @@ def main():
         plt.show()
     except Exception as e:
         print(f"{type(e).__name__}: {e}")
+    except KeyboardInterrupt as e:
+        print(f"{type(e).__name__}: Interrupted!")
 
 
 if __name__ == "__main__":
