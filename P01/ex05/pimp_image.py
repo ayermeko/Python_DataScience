@@ -46,4 +46,8 @@ def ft_blue(array: np.array) -> np.array:
     return res
 
 def ft_grey(array: np.array) -> np.array:
-    pass
+    res = np.mean(array, axis=2)
+    plt.imshow(res, cmap='gray')
+    plt.axis('off')
+    plt.show()
+    return res

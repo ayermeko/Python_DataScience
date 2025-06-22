@@ -17,7 +17,7 @@ def main():
         ft_red(array)
         ft_green(array)
         ft_blue(array)
-        # ft_grey(array)
+        ft_grey(array)
         # print(ft_invert.__doc__)
     except Exception as e:
         print(f"{type(e).__name__}: {e}")
