@@ -2,6 +2,7 @@ import os
 import numpy as np
 from PIL import Image
 
+
 def ft_load(path: str) -> np.array:
     """
     Load an image form a file and return it as a numpy array.
