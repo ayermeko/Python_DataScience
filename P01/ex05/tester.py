@@ -7,7 +7,21 @@ from load_image import ft_load
 
 
 def main():
-    pass
+    """
+    The main funciton to test and call the fucntions
+    from different files.
+    """
+    array = ft_load("landscape.jpg")
+    try:
+        ft_invert(array)
+        ft_red(array)
+        ft_green(array)
+        ft_blue(array)
+        # ft_grey(array)
+        # print(ft_invert.__doc__)
+    except Exception as e:
+        print(f"{type(e).__name__}: {e}")
+
 
 
 if __name__ == "__main__":

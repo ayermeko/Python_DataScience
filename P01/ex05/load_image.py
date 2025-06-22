@@ -19,8 +19,9 @@ def ft_load(path: str) -> np.array:
         img = Image.open(path)
         result = np.array(img)
 
-        # print(f"The shape of image is: {result.shape}")
+        print(f"The shape of image is: {result.shape}")
         # rgb_img = img.convert("RGB")
+        print(result)
 
         return result
     except Exception as e:
