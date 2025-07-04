@@ -54,7 +54,6 @@ def main() -> None:
                 [f"{i}M" for i in range(20, 61, 20)])
 
         plt.legend()
-        plt.tight_layout()
         plt.show()
 
     except Exception as e:
