@@ -47,6 +47,7 @@ def main() -> None:
         plt.xlabel("Year")
         plt.ylabel("Population")
         plt.xlim(1800, 2050)
+        plt.xticks(range(1800, 2041, 40))
 
         # Center 40M in the visible range
         plt.yticks([i * 1e6 for i in range(20, 61, 20)],
