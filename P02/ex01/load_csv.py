@@ -1,6 +1,7 @@
 import os
 import pandas
 
+
 def load(path: str) -> pandas.DataFrame:
     try:
         assert isinstance(path, str), "Path is bad."

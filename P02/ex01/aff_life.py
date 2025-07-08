@@ -11,7 +11,8 @@ def main():
         if country not in dataset['country'].values:
             raise ValueError("Country is not in a dataset.")
         country_data = dataset[dataset['country'] == country]
-        years = [int(year) for year in dataset.columns[1:] if str(year).isdigit()]
+        years = [int(year) for year in dataset.columns[1:]
+                 if str(year).isdigit()]
         life_expectancy = country_data.iloc[0, 1:].values
 
         plt.plot(years, life_expectancy, label=country)
