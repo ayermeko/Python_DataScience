@@ -6,7 +6,5 @@ class Baratheon(Character):
 
 
 class Lannister(Character):
-#your code here
-# decorator
     def create_lannister():
         pass
