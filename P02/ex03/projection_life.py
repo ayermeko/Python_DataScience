@@ -1,6 +1,7 @@
 from load_csv import load
 import matplotlib.pyplot as plt
 
+
 def main():
     file1 = load("income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
     file2 = load("life_expectancy_years.csv")
@@ -9,7 +10,7 @@ def main():
     certain_year = "1900"
     gnp_1900 = file1[certain_year]
     life_expectancy_1900 = file2[certain_year]
-    
+
     try:
         plt.scatter(gnp_1900, life_expectancy_1900)
         plt.title("1900")
