@@ -7,7 +7,7 @@ def main():
     if dataset is None:
         return
     try:
-        country = "Kazakhstan"
+        country = "Czech Republic"
         if country not in dataset['country'].values:
             raise ValueError("Country is not in a dataset.")
         country_data = dataset[dataset['country'] == country]
